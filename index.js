@@ -14,6 +14,8 @@ app.use(express.json());
 // :TODO update origin once pushed to production
 app.use(cors());
 
+app.use('/users', require('./routes/users'));
+
 app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`)
+    console.log(`Listening on port ${PORT}`);
 })
