@@ -28,7 +28,6 @@ async function create(req, res) {
             res.json(token);
         }
     } catch (err) {
-        // res.status(400).json(err.message);
         res.status(400).json("unable to process request");
     }
 }
